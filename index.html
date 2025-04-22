@@ -1,40 +1,175 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"> 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header class="header">
-            <a href="#" class="logo">Portfolio</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibtissem | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#" class="logo">Ibtissem</a>
+        <nav class="navbar">
+            <a href="#" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About Me</a>
+            <a href="#skills" style="--i:3">Skills</a>
+            <a href="#projects" style="--i:4">Projects</a>
+            <a href="#contact" style="--i:5">Contact</a>
+        </nav>
+    </header>
 
-            <nav class="navbar">
-                <a href="#" style="--i:1" class="active">Home</a>
-                <a href="#" style="--i:2">About Me</a>
-                <a href="#" style="--i:3">Skills</a>
-                <a href="#" style="--i:4">Projects</a>
-                <a href="#" style="--i:5">Contact</a>
-            </nav>
-        </header>
-        <section class="home">
-            <div class="home-content">
-                <h3>Welcome 👋</h3>
-                <h1>I'm Ibtissem</h1>
-                <h3>I'm a <span class="text"></span></h3>
-                
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Welcome 👋</h3>
+            <h1>I'm Ibtissem</h1>
+            <h3>I'm a <span class="text"></span></h3>
+            <p>
+                Computer Science Student | Cybersecurity Enthusiast <br>
+                Curious, creative and always eager to take on new challenges. I love building tech projects related to programming and security.
+            </p>
+            <a href="images/cv.pdf" class="btn" target="_blank">Open CV</a>
+
+        </div>
+        <!--<div class="photo">
+            <img src="photo_ibtissem.png" alt="Ibtissem">
+        </div>-->
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>I'm Ibtissem</h3>
                 <p>
-                    Computer Science Student | Cybersecurity Enthusiast
-                    <br>Curious, creative and always eager to take on new challenges, I develop projects related to programming, cybersecurity and technology in general.
-                </p>
-                <a href="#" class="btn">Download CV</a>
+                    I'm Ibtissem, a Computer Science student and aspiring Cybersecurity professional.
+I am driven by curiosity and a love for solving complex technical problems. My journey into technology began with a fascination for programming and a desire to understand how systems and networks work. This interest has evolved into a passion for learning about cybersecurity and understanding how to build secure and efficient systems.
+
+Beyond my academic pursuits, I have a deep appreciation for creativity and the arts, which I express through playing the piano. This balance between analytical thinking and creativity is what fuels my drive to innovate. I also enjoy reading a wide range of books, particularly those on science and technology, which continually inspire and broaden my understanding of the world.
+                  </p>
+                  
             </div>
-            <div class="photo">
-                <img src="photo_ibtissem.png" alt="Ibtissem">
+            <div class="about-photo">
+                <img src="photo_ibtissem.png" alt="Ibtissem About">
             </div>
-        </section>
-        <script src="script.js"></script>
-    </body>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+        <div class="skills">
+            <div class="heading">
+                <h2>Skills</h2>
+                <span>My technical abilities</span>
+            </div>
+            <div class="skills-content">
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-php"></i>
+                    <h3>PHP</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="images/haskell_logo.png" alt="Haskell Logo" class="skill-logo"> <!-- Logo de Haskell -->
+                    <h3>Haskell</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>MySQL</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>PostgreSQL</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-terminal"></i>
+                    <h3>Unix/Linux</h3>
+                </div>
+            </div>
+        </div>
+        
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="projects-container">
+            <!-- Port Scanner -->
+            <div class="project-card">
+                <div class="image-container">
+                    <img src="images/scanner.png" alt="Port Scanner" class="default-image">
+                </div>
+                <div class="project-info">
+                    <h3>Port Scanner</h3>
+                    <p>
+                        A Python-based tool that scans open ports on a given IP address within a specified range. It’s a hands-on way to understand sockets, IP addressing, and port-level network communication.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Password Checker -->
+            <div class="project-card">
+                <div class="image-container">
+                    <img src="images/password.png" alt="Password Checker" class="default-image">
+                </div>
+                <div class="project-info">
+                    <h3>Password Strength Checker</h3>
+                    <p>
+                        A JavaScript app that evaluates password strength in real-time, using both visual feedback and text. It detects weak, repetitive, and common passwords to help users build secure credentials.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Projects in Progress -->
+            <div class="project-card">
+                <div class="coming-soon">
+                <div class="image-container">
+                    <img src="images/coming_soon.jpg" alt="Coming Soon" class="default-image">
+                </div>
+            </div>
+                <div class="project-info">
+                    <h3>Ongoing Projects</h3>
+                    <p><em>Stay tuned!</em></p>
+                    
+                </div>
+            </div>
+            
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact Me</h2>
+    
+        <div class="contact-details">
+            <p>📧 <a href="mailto:ibtissem.b982@gmail.com">ibtissem.b982@gmail.com</a></p>
+            <p>☎️ <a href="tel:+33777867083">+33 7 77 86 70 83</a></p>
+           
+            
+        </div>
+    </section>
+
+  
+    <script src="script.js"></script>
+</body>
+
 </html>
