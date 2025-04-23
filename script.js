@@ -1,4 +1,3 @@
-// script.js
 const text = document.querySelector(".text");
 const words = ["Computer Science Student", "Cybersecurity Enthusiast", "Creative Developer"];
 let wordIndex = 0;
@@ -29,3 +28,17 @@ function typeEffect() {
 }
 
 typeEffect();
+
+const retourHaut = document.querySelector(".haut");
+
+window.addEventListener("scroll", () => {
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const pageHeight = document.body.scrollHeight;
+
+    
+    if (scrollPosition >= pageHeight - 100) {
+        retourHaut.classList.add("visible");
+    } else {
+        retourHaut.classList.remove("visible");
+    }
+});
